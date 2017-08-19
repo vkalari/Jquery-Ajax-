@@ -1,0 +1,14 @@
+div.header
+{
+    background-color: #f1f1f1;
+    height: 180px;
+    text-align: center;
+}
+
+div.create
+{
+    background-color: white;
+    top: 250px;
+    border: 1px solid;
+
+}

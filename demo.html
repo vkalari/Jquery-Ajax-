@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+
+<script>
+
+    $.ajax({
+
+        url: 'tasktracker.json',
+        dataType: 'json',
+        type: 'get',
+        cache: false,
+        success: function (data) {
+
+            $(data.tasktracker).each(function (index,value) {
+
+                console.log(value.name);
+                console.log(value.date);
+            });
+                
+            }
+
+
+
+    });
+
+
+
+    </script>
+
+
+</body>
+</html>
